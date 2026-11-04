@@ -1,0 +1,18 @@
+{
+  "name": "ERKANA Gestión PRO",
+  "short_name": "ERKANA",
+  "description": "Pedidos, calendario, tickets y stock",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f7fb",
+  "theme_color": "#10152b",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
