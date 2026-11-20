@@ -41,3 +41,12 @@ Los tickets son comprobantes de pedido, **no facturas fiscales**.
 
 ## Desarrollo
 Esta versión es una aplicación estática autocontenida en `index.html`, sin instalación ni compilación. Para modificaciones, editar el archivo y hacer commit en `main`. No guardar datos de clientes en este repositorio.
+
+## Actualización v1.2 (20/11/2026)
+- En **Pedidos** y **Últimos pedidos**, cada fila muestra directamente los productos, cantidades, subtotales, notas e indicaciones, entrega y forma de pago, sin abrir el editor.
+- **Entregado**: casillero independiente del cobro; pasa el estado a Entregado y al desmarcar restaura el estado anterior de producción.
+- **Pagado**: casillero independiente de la entrega; al activarlo registra el importe total como recibido y deja el saldo en cero. Al desmarcarlo solicita confirmación y restaura el anticipo anterior, si se había registrado por ese control.
+- Colores de filas: amarillo para pedidos pendientes de entrega/en preparación, verde para entregados, rojo para cancelados; los presupuestos permanecen neutros.
+- Compatible con pedidos anteriores y con la sincronización GitHub privada. Si el sitio todavía parece antiguo, recargar y comprobar **v1.2** en el menú lateral.
+
+**Precaución:** "Pagado" modifica el importe recibido del pedido; comprobar el dinero realmente cobrado antes de tildarlo. Los pedidos cancelados no permiten marcar entrega/cobro desde la lista.
