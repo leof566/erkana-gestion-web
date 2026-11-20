@@ -50,3 +50,12 @@ Esta versión es una aplicación estática autocontenida en `index.html`, sin in
 - Compatible con pedidos anteriores y con la sincronización GitHub privada. Si el sitio todavía parece antiguo, recargar y comprobar **v1.2** en el menú lateral.
 
 **Precaución:** "Pagado" modifica el importe recibido del pedido; comprobar el dinero realmente cobrado antes de tildarlo. Los pedidos cancelados no permiten marcar entrega/cobro desde la lista.
+
+## Actualización v1.3 — Archivo de ventas (20/11/2026)
+- Nueva sección **Activos**, **Solo pendientes**, **Archivados** y **Todos** en Pedidos, cada una con su contador.
+- Botón **Archivar** en cada pedido: lo oculta de los pedidos activos, sin borrarlo ni afectar el historial de cobro, stock, cálculo ni reportes.
+- Botón **Restaurar** desde la sección Archivados o Todos: devuelve el pedido a la vista principal.
+- Si se archiva un pedido todavía pendiente o con saldo por cobrar, se pide confirmación para evitar esconder obligaciones accidentalmente.
+- Los pedidos archivados dejan de aparecer en los últimos pedidos del panel y en el calendario operativo; siguen disponibles en el archivo, en el CSV completo y en los reportes de ventas.
+- Se guarda `archivedAt` junto con `updatedAt` para que el estado archivado se sincronice por GitHub entre dispositivos. Los datos anteriores siguen compatibles, sin migración.
+- En móvil, recargar la página o cerrar y volver a abrir la aplicación para recibir la versión **v1.3**.
